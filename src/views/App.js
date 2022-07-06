@@ -10,7 +10,7 @@ function App() {
     <div className="App-hoi-Phong">
       <header className="App-header">
         {/* <img src={logo} className="App-logo"></img> */}
-        <ListTodo></ListTodo>
+        <ListTodo />
       </header>
 
       <ToastContainer
