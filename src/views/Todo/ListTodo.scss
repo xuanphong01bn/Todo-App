@@ -1,0 +1,27 @@
+.include{
+    height: 100vh;
+    
+    .nhanhan{
+        height: 10vh;
+        width: 10vh;
+    }
+    .list{
+        padding: 5px 0;
+        margin: 5px auto;
+        width: 40vw;
+        border: 1px solid grey;
+        .list-detail{
+            margin: 0 auto;
+            width: 90%;
+            border-bottom: 1px solid grey;
+            .edit-btn{
+                height: auto;
+                cursor: pointer;
+                margin:0 5px;
+            }
+            .delete-btn{
+                cursor: pointer;
+            }
+        }
+    }
+}
