@@ -1,5 +1,4 @@
 import React from "react";
-import nhanhan from "./nhanhan.jpg"
 import "./ListTodo.scss"
 import AddTodo from "./AddTodo";
 import { ToastContainer, toast } from 'react-toastify';
@@ -14,7 +13,7 @@ class ListTodo extends React.Component {
         ],
         editTodo: {},// biến hứng sau khi edit
     }
-    addNewTitle = (title) => {
+    addNewTitle = (title) => { // title là một object
         console.log('>>>check title: ', title);
         let currentTitle = this.state.listTodo;
         currentTitle.push(title);
@@ -67,7 +66,6 @@ class ListTodo extends React.Component {
         console.log('>>> check empty object: ', isEmpty)
         return (
             <div className="include">
-                <img src={nhanhan} className="nhanhan" alt="Kuwaga" />
                 <p>Simple Todo app with React nhanhan &amp; Phong</p>
                 <AddTodo
                     addNewTitle={this.addNewTitle}
